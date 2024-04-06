@@ -113,14 +113,14 @@ const SignUpSignIn = () => {
         {flag ? (
           <div className="signup-signin-container">
             <h2 style={{ textAlign: "center" }}>
-              Log In on <span className="blue-text">Financely.</span>
+              Log In on <span className="blue-text">FinanceFusion</span>
             </h2>
             <form onSubmit={signUpWithEmail}>
               <div className="input-wrapper">
                 <p>Email</p>
                 <input
                   type="email"
-                  placeholder="JohnDoe@gmail.com"
+                  placeholder="Loki@gmail.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -130,7 +130,7 @@ const SignUpSignIn = () => {
                 <p>Password</p>
                 <input
                   type="password"
-                  placeholder="Example123"
+                  placeholder="Loki123"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
@@ -167,14 +167,14 @@ const SignUpSignIn = () => {
         ) : (
           <div className="signup-signin-container">
             <h2 style={{ textAlign: "center" }}>
-              Sign Up on <span className="blue-text">Financely.</span>
+              Sign Up on <span className="blue-text">FinanceFusion</span>
             </h2>
             <form onSubmit={signUpWithEmail}>
               <div className="input-wrapper">
                 <p>Full Name</p>
                 <input
                   type="text"
-                  placeholder="John Doe"
+                  placeholder="Loki"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
@@ -183,7 +183,7 @@ const SignUpSignIn = () => {
                 <p>Email</p>
                 <input
                   type="email"
-                  placeholder="JohnDoe@gmail.com"
+                  placeholder="Loki@gmail.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -193,7 +193,7 @@ const SignUpSignIn = () => {
                 <p>Password</p>
                 <input
                   type="password"
-                  placeholder="Example123"
+                  placeholder="Loki123"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
@@ -203,7 +203,7 @@ const SignUpSignIn = () => {
                 <p>Confirm Password</p>
                 <input
                   type="password"
-                  placeholder="Example123"
+                  placeholder="Loki123"
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
                 />
