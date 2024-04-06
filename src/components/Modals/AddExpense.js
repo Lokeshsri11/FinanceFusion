@@ -10,12 +10,14 @@ import {
   DatePicker,
   Select,
 } from "antd";
+
 function AddExpenseModal({
   isExpenseModalVisible,
   handleExpenseCancel,
   onFinish,
 }) {
   const [form] = Form.useForm();
+
   return (
     <Modal
       style={{ fontWeight: 600 }}
@@ -71,12 +73,11 @@ function AddExpenseModal({
           style={{ fontWeight: 600 }}
           rules={[{ required: true, message: "Please select a tag!" }]}
         >
-          <Select className="select-input-2">
-            <Select.Option value="food">Food</Select.Option>
-            <Select.Option value="education">Education</Select.Option>
-            <Select.Option value="office">Office</Select.Option>
-            {/* Add more tags here */}
-          </Select>
+          <Select
+            className="select-input-2"
+            mode="tags" // Allow users to input their own tags
+            placeholder="Select or enter a custom tag"
+          />
         </Form.Item>
         <Form.Item>
           <Button className="btn btn-blue" type="primary" htmlType="submit">
